@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Background})` }}
-      className="w-screen h-screen bg-contain bg-no-repeat bg-bottom-left lg:bg-cover"
+      className="w-screen h-screen bg-no-repeat bg-bottom-left bg-cover"
     ></div>
   );
 };
