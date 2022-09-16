@@ -7,7 +7,7 @@ const Fixture = () => {
 
   return (
     <div className={EquiposStyle}>
-        <h2 className='col-span-6 mt-5 ml-5 text-primary'>CONOCE A LOS GRUPOS FINALES</h2>
+        <h2 className='col-span-6 mt-5 ml-5 h-fit text-primary text-center text-5xl font-bold  pt-5 pb-8'>CONOCE A LOS GRUPOS FINALES</h2>
         <div className={contenedorStyle}>
             <h4 className={grupoTitle}>Grupo A</h4>
         {
