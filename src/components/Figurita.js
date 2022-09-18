@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Modal from './Modal';
 
@@ -16,12 +15,12 @@ const Figurita = (props) => {
 
             <div className="pt-14">
 
-                <div className="flex flex-col justify-center items-center max-w-xs max-h-90 bg-white rounded-lg shadow-md ">
-                    <a href="http://localhost:3000/">
+                <div className={"flex flex-col justify-center items-center max-w-xs max-h-90 bg-white rounded-lg shadow-md"}>
+                    <a href="">
                         <img className="w-52 h-60 p-6 pb-3 rounded-t-lg " src={props.img} alt="product"></img>
                     </a>
                     <div className="px-3 pb-3">
-                        <a href="http://localhost:3000/">
+                        <a href="">
                             <h5 className="text-xl mb-2 font-semibold tracking-tight text-gray-900">Lionel Messi</h5>
                         </a>
                         <div class="flex items-center mt-2.5 mb-5">
@@ -41,9 +40,10 @@ const Figurita = (props) => {
                         
                     </div>
                 </div>
-                {openModal && <Modal style={{opacity: "0.1"}} closeModal={setOpenModal}/>}
-        
             </div>
+
+            {openModal && <Modal closeModal={setOpenModal}/>}
+
         </div>
     )
   }
