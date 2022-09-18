@@ -1,9 +1,6 @@
-
 import * as styles from './Styles'
 
 
-
-import React from 'react'
 
 const Modal = ({closeModal}) => {
 
