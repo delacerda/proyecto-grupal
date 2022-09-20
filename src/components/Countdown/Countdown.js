@@ -1,4 +1,5 @@
 import "./Countdown.css";
+import Image from "./Utils/reloj.png"
 import { useState, useEffect } from "react";
 import { getRemainingTimeUntilMsTimestamp } from "./Utils/CountdownTUtils";
 
@@ -25,7 +26,7 @@ const CountdownTimer = ({ countdownTimestampMs }) => {
 
   return (
     <div className="countdown">
-  
+           
       <span>Faltan</span>
       <span>{remainingTime.days}</span>
       <span>days</span>
