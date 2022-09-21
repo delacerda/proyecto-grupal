@@ -5,6 +5,7 @@ import Fixture from "./components/Fixture/Fixture";
 import Footer from "./components/Footer";
 import SobreNosotros from "./components/sobreNosotros/SobreNosotros";
 import Countdown from "./components/Countdown/Countdown";
+import WhatsappBtn from "./components/WhatsappBtn";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ListaFiguritas />
       <SobreNosotros />
       <Fixture />
+      <WhatsappBtn/>
       <Footer />
     </>
   );
