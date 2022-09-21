@@ -1,6 +1,7 @@
 import Background from "../img/home1.jpg";
 import React from "react";
 
+
 const Home = () => {
   return (
     <div

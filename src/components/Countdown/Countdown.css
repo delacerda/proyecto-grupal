@@ -1,25 +1,72 @@
-.image {
-  height: 90px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&display=swap');
 
 .countdown {
   background-color: rgb(86 4 44);
   color: white;
   width: 100%;
-  height: 100px;
+  height: auto;
   border: 2px solid black;
-  font-size: 30px;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container span {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+}
+
+.text-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.countdown span {
+.text-container span {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.image {
+  height: 190px;
+ }
+
+ .countdown span {
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .two-numbers {
   width: 2ch;
+}
+
+@media (max-width: 768px) {
+  .countdown {
+    width: 100%;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-container, .text-container {
+    padding-bottom: 1rem;
+  }
+
 }

@@ -1,5 +1,5 @@
 import "./Countdown.css";
-import Image from "./Utils/reloj.png"
+import Image from "./Utils/tag-heuer.svg";
 import { useState, useEffect } from "react";
 import { getRemainingTimeUntilMsTimestamp } from "./Utils/CountdownTUtils";
 
@@ -26,16 +26,33 @@ const CountdownTimer = ({ countdownTimestampMs }) => {
 
   return (
     <div className="countdown">
-           
-      <span>Faltan</span>
-      <span>{remainingTime.days}</span>
-      <span>days</span>
-      <span className="two-numbers">{remainingTime.hours}</span>
-      <span>hours</span>
-      <span className="two-numbers">{remainingTime.minutes}</span>
-      <span>minutes</span>
-      <span className="two-numbers">{remainingTime.seconds}</span>
-      <span>seconds</span>
+      <div className="image-container">
+        <img className="image" src={Image} />
+      </div>
+
+      <div className="title-container">
+      <span>El torneo comienza en</span>
+      </div>
+
+      <div className="text-container">
+        <p>
+        <span>{remainingTime.days}</span>
+        <span>Días</span>
+        </p>
+        <p>
+        <span className="two-numbers">{remainingTime.hours}</span>
+        <span>Horas</span>
+        </p>
+        <p>
+        <span className="two-numbers">{remainingTime.minutes}</span>
+        <span>Minutos</span>
+        </p>
+        <p>
+        <span className="two-numbers">{remainingTime.seconds}</span>
+        <span>Segundos</span>
+        </p>
+      </div>
+      
     </div>
   );
 };
