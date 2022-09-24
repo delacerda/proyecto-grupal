@@ -4,6 +4,7 @@ import Modal from './Modal';
 
 
 
+
 const Figurita = (props) => {
 
     const [openModal, setOpenModal] = useState(false);
