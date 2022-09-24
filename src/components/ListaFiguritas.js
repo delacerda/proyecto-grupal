@@ -13,7 +13,7 @@ const cards = [
 
 export const ListaFiguritas = (props) => {
  return (
-   <div className='bg-gray-100 h-fit text-primary text-center text-5xl font-bold  pt-5 pb-12 text-gray-900'>
+   <div className='pt-5 pb-12 text-5xl font-bold text-center bg-gray-100 h-fit text-primary'>
      <h2>MAS BUSCADAS</h2>
      <section className="flex flex-wrap justify-center gap-3.5">
 
