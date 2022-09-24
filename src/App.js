@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import SobreNosotros from "./components/sobreNosotros/SobreNosotros";
 import Countdown from "./components/Countdown/Countdown";
 import WhatsappBtn from "./components/WhatsappBtn";
+import Carrusel from "./components/Carrusel/Carrusel";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SobreNosotros />
       <Fixture />
       <WhatsappBtn/>
+      <Carrusel /> 
       <Footer />
     </>
   );
