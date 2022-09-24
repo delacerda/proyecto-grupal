@@ -5,7 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ height:"100vh", backgroundImage: `url(${Background})` }}
       className="w-screen h-screen bg-no-repeat bg-bottom-left bg-cover bg-center "
     >
     </div>
