@@ -7,39 +7,124 @@ export const shoppingInitialState = {
   products: [
     {
       id: 1,
-      image:
-        "https://preview.redd.it/uqgewilktrk91.png?width=640&crop=smart&auto=webp&s=cdc5a01a5f24a4889db6da7a557f642662affd7c",
-      name: "Messi",
-      price: 100,
+      image: "https://i.imgur.com/jD1dCpv.jpeg",
+      name: "Al Rihla", 
+      price: "10000"
     },
     {
       id: 2,
-      image:
-        "https://http2.mlstatic.com/D_NQ_NP_772098-MLA51600763565_092022-V.jpg",
-      name: "Neymar",
-      price: 200,
+      image: "https://i.imgur.com/nvu03MW.jpeg",
+      name: "Angel Di Maria",
+      price: "9000"
     },
     {
       id: 3,
-      image:
-        "https://preview.redd.it/uqgewilktrk91.png?width=640&crop=smart&auto=webp&s=cdc5a01a5f24a4889db6da7a557f642662affd7c",
-      name: "Cristiano ",
-      price: 300,
+      image: "https://i.imgur.com/wVHltYV.jpeg",
+      name: "Emiliano Martinez",
+      price: "10000"
     },
     {
       id: 4,
-      image:
-        "https://preview.redd.it/uqgewilktrk91.png?width=640&crop=smart&auto=webp&s=cdc5a01a5f24a4889db6da7a557f642662affd7c",
-      name: "Mbappe",
-      price: 500,
+      image: "https://i.imgur.com/MzoxwwA.jpeg",
+      name: "Franco Armani",
+      price: "8000"
     },
     {
       id: 5,
-      image:
-        "https://preview.redd.it/uqgewilktrk91.png?width=640&crop=smart&auto=webp&s=cdc5a01a5f24a4889db6da7a557f642662affd7c",
-      name: "Maradona",
-      price: 600,
+      image: "https://i.imgur.com/KiIvXJQ.jpeg",
+      name: "Lionel Messi",
+      price: "10000"
     },
+    {
+      id: 6,
+      image: "https://i.imgur.com/3klprdl.jpeg",
+      name: "AFA",
+      price: "10000"
+    },
+    {
+      id: 7,
+      image: "https://i.imgur.com/rOFek7r.jpeg",
+      name: "Neymar jr.",
+      price: "10000"
+    },
+    {
+      id: 8,
+      image: "https://i.imgur.com/PffoZbB.jpeg",
+      name: "CBF",
+      price: "10000"
+    },
+    {
+      id: 9,
+      image: "https://i.imgur.com/EgsFnWi.jpeg",
+      name: "Luka Modric",
+      price: "10000"
+    },
+    {
+      id: 10,
+      image: "https://i.imgur.com/KbgcnCY.jpeg",
+      name: "Sergio Busquets",
+      price: "9500"
+    },
+    {
+      id: 11,
+      image: "https://i.imgur.com/7fDNGs8.jpeg",
+      name: "Antoine Griezmann",
+      price: "10000"
+    },
+    {
+      id: 12,
+      image: "https://i.imgur.com/ygcZ1A4.jpg",
+      name: "Kylian Mbappe",
+      price: "10000"
+    },
+    {
+      id: 13,
+      image: "https://i.imgur.com/PtG3hhD.jpg",
+      name: "N'golo Kante",
+      price: "8000"
+    },
+    {
+      id: 14,
+      image: "https://i.imgur.com/hnXZA6B.jpg",
+      name: "Paul Pogba",
+      price: "7500"
+    },
+    {
+      id: 15,
+      image: "https://i.imgur.com/C1ui3Fh.jpg",
+      name: "Manuel Neuer",
+      price: "9500"
+    },
+    {
+      id: 16,
+      image: "https://i.imgur.com/e4A6P5T.jpg",
+      name: "Marc-Andre Ter Stegen",
+      price: "9000"
+    },
+    {
+      id: 17,
+      image: "https://i.imgur.com/DNc3Lus.jpg",
+      name: "Cristiano Ronaldo",
+      price: "10000"
+    },
+    {
+      id: 18,
+      image: "https://i.imgur.com/OhW9k2S.jpg",
+      name: "Edison Cavani",
+      price: "8500"
+    },
+    {
+      id: 19,
+      image: "https://i.imgur.com/LqCjSMZ.jpg",
+      name: "Luis Suarez",
+      price: "9000"
+    },
+    {
+      id: 20,
+      image: "https://i.imgur.com/FVjVqm2.jpg",
+      name: "Gareth Bale",
+      price: "8000"
+    }
   ],
   cart: [],
 };

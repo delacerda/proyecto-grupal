@@ -7,7 +7,7 @@ const CartItem = ({data, delFromCart, clearCart}) => {
 
   const {id,image,name,price,quantity} = data; 
   return (
-    <div className="flex flex-col w-full ml-0 lg:ml-12 lg:w-2/5">
+    <div className="flex flex-col w-full mt-10 -mb-10 bg-white lg:ml-12 lg:w-2/5">
       <div className="pt-12 md:pt-0 2xl:ps-4">
 
         <div className="mt-8">
@@ -21,8 +21,8 @@ const CartItem = ({data, delFromCart, clearCart}) => {
                         <h3 className="text-sm">Cantidad : {quantity} </h3>
                         <h3 className="text-sm">Precio por un. ${price}</h3> 
                     </div>
-                    <div class="flex p-4 mt-4">
-                        <h2 className="text-xl font-bold">Total  ${price*quantity}</h2>
+                    <div class="flex flex-col p-4 mt-4">
+                        <h2 className="text-xl font-bold">Total <span className="flex"> ${price*quantity} </span></h2>
                     </div>
                     <div className="flex flex-col"> 
                     <button className= "w-24 h-11 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={()=> delFromCart(id)}> Eliminar Uno </button>
