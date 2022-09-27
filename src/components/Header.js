@@ -14,16 +14,16 @@ const Header = () => {
   }
 
   return (
-    <div className='w-full h-20 fixed lg:fixed text-white flex justify-between p-4 items-center'>
+    <div className='fixed flex items-center justify-between w-full h-20 p-4 text-white lg:fixed'>
       <div className='cursor-pointer top-6 h-12 w-32 bg-[url("./img/logo.png")] bg-cover order-2 lg:order-1'/> {/*LOGO*/}
             
       <nav className='lg:order-2'>
 
-        <div className='absolute left-6 lg:hidden top-6 scale-150'>
+        <div className='absolute scale-150 left-6 lg:hidden top-6'>
           <FontAwesomeIcon onClick={showMenu} className='scale-150 cursor-pointer' active={active} icon={faBars} /> {/*MENU HAMBURGUESA*/}
         </div>
         
-        <ul className='hidden lg:flex gap-8 p-6 uppercase bg-white/10'> {/*NAVBAR*/}
+        <ul className='hidden gap-8 p-6 uppercase lg:flex bg-white/10'> {/*NAVBAR*/}
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Más buscadas</li>
           <li className="cursor-pointer">Grupos</li>
@@ -35,8 +35,8 @@ const Header = () => {
         <MenuItems showMenu={showMenu} active={active} />
       </nav>
 
-      <div className='bg-black/40 backdrop-blur-lg rounded-full w-16 h-16 flex justify-center items-center order-3'> {/*CARRITO*/}
-            <FontAwesomeIcon icon={faCartShopping} className='w-10 h-10 cursor-pointer'/>
+      <div className='flex items-center justify-center order-3 w-16 h-16 rounded-full bg-black/40 backdrop-blur-lg'> {/*CARRITO + MODAL CARRITO*/}
+            <FontAwesomeIcon icon={faCartShopping} className='w-10 h-10 cursor-pointer' />
         </div>
     </div>
   )
