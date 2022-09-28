@@ -13,9 +13,21 @@ const Header = () => {
     setActive(!active)
   }
 
+  const [color, setColor] = useState(false)
+
+  const changeColor = () => {
+    if(window.scrollY >= 90){
+      setColor(true)
+    }else{
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   return (
-    <div className='w-full h-20 fixed lg:fixed text-white flex justify-between p-4 items-center'>
-      <div className='cursor-pointer top-6 h-12 w-32 bg-[url("./img/logo.png")] bg-cover order-2 lg:order-1'/> {/*LOGO*/}
+    <div className={color ? 'fixed w-full h-20 bg-[#3D000F] text-white flex justify-between p-4 items-center' : 'w-full h-20 fixed lg:fixed text-white flex justify-between p-4 items-center'}>
+      <div className='cursor-pointer top-6 h-8 w-20 bg-[url("./img/logo.png")] bg-cover order-2 lg:order-1'/> {/*LOGO*/}
             
       <nav className='lg:order-2'>
 
@@ -23,13 +35,13 @@ const Header = () => {
           <FontAwesomeIcon onClick={showMenu} className='scale-150 cursor-pointer' active={active} icon={faBars} /> {/*MENU HAMBURGUESA*/}
         </div>
         
-        <ul className='hidden lg:flex gap-8 p-6 uppercase bg-white/10'> {/*NAVBAR*/}
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Más buscadas</li>
-          <li className="cursor-pointer">Grupos</li>
-          <li className="cursor-pointer">Productos</li>
-          <li className="cursor-pointer">Sobre nosotros</li>
-          <li className="cursor-pointer">Contactanos</li>
+        <ul className={color ? 'hidden lg:flex gap-8 p-6 uppercase' : 'hidden lg:flex gap-8 p-6 uppercase bg-white/10'}> {/*NAVBAR*/}
+          <li className="hover:underline underline-offset-1 cursor-pointer">Home</li>
+          <li className="hover:underline underline-offset-1 cursor-pointer">Más buscadas</li>
+          <li className="hover:underline underline-offset-1 cursor-pointer">Grupos</li>
+          <li className="hover:underline underline-offset-1 cursor-pointer">Productos</li>
+          <li className="hover:underline underline-offset-1 cursor-pointer">Sobre nosotros</li>
+          <li className="hover:underline underline-offset-1 cursor-pointer">Contactanos</li>          
         </ul>
 
         <MenuItems showMenu={showMenu} active={active} />
