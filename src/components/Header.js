@@ -26,7 +26,7 @@ const Header = () => {
   window.addEventListener('scroll', changeColor)
 
   return (
-    <div className={color ? 'fixed w-full h-20 bg-[#3D000F] text-white flex justify-between p-4 items-center' : 'w-full h-20 fixed lg:fixed text-white flex justify-between p-4 items-center'}>
+    <div className={color ? 'fixed w-full h-20 transition ease-in-out delay-250 bg-[#3D000F] text-white flex justify-between p-4 items-center' : 'w-full h-20 fixed lg:fixed text-white flex justify-between p-4 items-center'}>
       <div className='cursor-pointer top-6 h-8 w-20 bg-[url("./img/logo.png")] bg-cover order-2 lg:order-1'/> {/*LOGO*/}
             
       <nav className='lg:order-2'>
@@ -36,12 +36,12 @@ const Header = () => {
         </div>
         
         <ul className={color ? 'hidden lg:flex gap-8 p-6 uppercase' : 'hidden lg:flex gap-8 p-6 uppercase bg-white/10'}> {/*NAVBAR*/}
-          <li className="hover:underline underline-offset-1 cursor-pointer">Home</li>
-          <li className="hover:underline underline-offset-1 cursor-pointer">Más buscadas</li>
-          <li className="hover:underline underline-offset-1 cursor-pointer">Grupos</li>
-          <li className="hover:underline underline-offset-1 cursor-pointer">Productos</li>
-          <li className="hover:underline underline-offset-1 cursor-pointer">Sobre nosotros</li>
-          <li className="hover:underline underline-offset-1 cursor-pointer">Contactanos</li>          
+          <li className="cursor-pointer hover:underline underline-offset-1">Home</li>
+          <li className="cursor-pointer hover:underline underline-offset-1">Más buscadas</li>
+          <li className="cursor-pointer hover:underline underline-offset-1">Grupos</li>
+          <li className="cursor-pointer hover:underline underline-offset-1">Productos</li>
+          <li className="cursor-pointer hover:underline underline-offset-1">Sobre nosotros</li>
+          <li className="cursor-pointer hover:underline underline-offset-1">Contactanos</li>          
         </ul>
 
         <MenuItems showMenu={showMenu} active={active} />
