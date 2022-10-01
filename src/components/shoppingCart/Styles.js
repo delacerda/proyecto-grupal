@@ -3,14 +3,14 @@
 
 export const modalBackground ="h-full w-full fixed left-0 right-0 top-0 bottom-0 flex justify-center items-center bg-black bg-opacity-30"
 
-export const modalContainer ="bg-white rounded-lg shadow-lg w-auto h-1/2 flex justify-between items-center flex-col p-6 m-6 "
+export const modalContainer ="bg-white rounded-lg shadow-lg w-auto h-1/2 flex justify-around items-center flex-col p-6 m-6 "
 
-export const closeBtn = "text-black relative ml-auto mt-auto" 
+export const closeBtn = "text-black ml-auto" 
 
 //export const modalTitle = "" text-xl text-center text-black mb-24 mt-6""
  
 
-export const modalBody = "flex flex-col justify-center text-black items-center  text-base mb-6 "
+export const modalBody = "flex flex-col justify-between text-black items-center  text-base mb-6 "
 
 export const modalFooter = "flex justify-around items-center"
 
