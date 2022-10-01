@@ -12,7 +12,7 @@ const ProductItem = ({data, addToCart}) => {
 
   const [openModal, setOpenModal] = useState(false);
     
-  let url=""
+  let url="http://localhost:5000/products"
   return (
     <div>
       <div className="pt-14">
