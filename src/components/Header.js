@@ -5,7 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
+
 const Header = () => {
+
+const [openModal, setOpenModal] = useState(false);
 
   const [active, setActive] = useState(false)
 
@@ -48,7 +51,7 @@ const Header = () => {
       </nav>
 
       <div className='flex items-center justify-center order-3 w-16 h-16 rounded-full bg-black/40 backdrop-blur-lg'> {/*CARRITO + MODAL CARRITO*/}
-            <FontAwesomeIcon icon={faCartShopping} className='w-10 h-10 cursor-pointer' />
+            <FontAwesomeIcon icon={faCartShopping} className='w-10 h-10 cursor-pointer'/>
         </div>
     </div>
   )
