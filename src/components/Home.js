@@ -7,6 +7,7 @@ const Home = () => {
     <div
       style={{ height:"100vh", backgroundImage: `url(${Background})` }}
       className="w-screen h-screen bg-no-repeat bg-bottom-left bg-cover bg-center "
+      id='home'
     >
     </div>
   );

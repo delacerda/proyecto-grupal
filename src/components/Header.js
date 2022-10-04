@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-scroll'
 import MenuItems from "./MenuItems"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -39,9 +39,9 @@ const [openModal, setOpenModal] = useState(false);
         </div>
         
         <ul className={color ? 'hidden lg:flex gap-8 p-6 uppercase' : 'hidden lg:flex gap-8 p-6 uppercase bg-white/10'}> {/*NAVBAR*/}
-          <li className="cursor-pointer hover:underline underline-offset-1">Home</li>
-          <li className="cursor-pointer hover:underline underline-offset-1">Más buscadas</li>
-          <li className="cursor-pointer hover:underline underline-offset-1">Grupos</li>
+          <li className="cursor-pointer hover:underline underline-offset-1"><Link to="home" spy={true} smooth={true}>Home</Link></li>
+          <li className="cursor-pointer hover:underline underline-offset-1"><Link to="masBuscadas" spy={true} smooth={true}>Más buscadas</Link></li>
+          <li className="cursor-pointer hover:underline underline-offset-1"><Link to="fixture" spy={true} smooth={true}>Grupos</Link></li>
           <li className="cursor-pointer hover:underline underline-offset-1">Productos</li>
           <li className="cursor-pointer hover:underline underline-offset-1">Sobre nosotros</li>
           <li className="cursor-pointer hover:underline underline-offset-1">Contactanos</li>          

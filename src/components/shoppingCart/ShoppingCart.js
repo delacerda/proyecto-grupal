@@ -50,7 +50,7 @@ const ShoppingCart = ({}) => {
     
     return (
      
-      <div className='pt-5 pb-12 text-5xl font-bold text-center bg-gray-100 h-fit text-primary'>
+      <div className='pt-5 pb-12 text-5xl font-bold text-center bg-gray-100 h-fit text-primary' id='masBuscadas'>
         <h2>MAS BUSCADAS</h2>
         <article className="flex flex-wrap justify-center gap-3.5">
         {products.map((product) =>(<ProductItem key={product.id} data={product} addToCart={addToCart}  /> 
