@@ -1,0 +1,101 @@
+
+
+
+.cart-Length
+{
+    width: 50px;
+    height: 60px;
+    z-index: 1000;
+    color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+    top: 23px;
+    left: 1812px; 
+    font-size: 20px;
+}
+
+ @media (max-width: 1536px) {
+    .cart-Length
+    {
+        position: fixed;
+        left: 1429px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .cart-Length
+    {
+        position: fixed;
+        left: 1174px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cart-Length
+    {
+        position: fixed;
+        left: 918px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-Length
+    {
+        position: fixed;
+        left: 660px;
+    }
+}
+
+@media (max-width: 640px) {
+   .cart-Length
+   {
+    position: fixed;
+    left: 532px;
+   }
+} 
+
+.modal
+{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.openModal
+{
+    display: flex;
+}
+
+.modalContainer
+{
+    position: relative;
+    padding: 1rem;
+    min-height: 80%;
+    height: 500px;
+    min-width: 90%;
+    width: 800px;
+    overflow-y: auto;
+    background-color: white;
+
+}
+.boton-x
+{
+    position: fixed;
+    color: black;
+    font-size: 30px;
+    top: 100px;
+    right: 120px;
+}
