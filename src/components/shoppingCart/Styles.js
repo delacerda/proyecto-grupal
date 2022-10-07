@@ -3,7 +3,7 @@
 
 export const modalBackground ="h-full w-full fixed left-0 right-0 top-0 bottom-0 flex justify-center items-center bg-black bg-opacity-30"
 
-export const modalContainer ="bg-white rounded-lg shadow-lg w-auto h-1/2 flex justify-around items-center flex-col p-6 m-6 "
+export const modalContainer ="bg-white rounded-lg shadow-lg w-auto overflow-y-auto h-1/2 flex justify-around items-center flex-col p-6 m-6 "
 
 export const closeBtn = "text-black ml-auto" 
 

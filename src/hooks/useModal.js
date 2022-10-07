@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 
-const useModal = (initialValue = false) => {
+export const useModal = (initialValue = false) => {
 
   const [isOpen, setisOpen] = useState(initialValue);
 
