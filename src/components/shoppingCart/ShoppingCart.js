@@ -84,9 +84,9 @@ const ShoppingCart = () => {
               {cart.map((item,index) => {totalCartPrice+= item.price * item.quantity;})}
               <div className='flex flex-col items-center justify-center mt-12'> 
                   {totalCartPrice === 0 ? ( 
-                    <div> 
-                  <h2> El Carrito está Vacio</h2>,
-                  <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Cerrar Carrito </button>
+                    <div className='flex flex-col items-center justify-center mt-6'> 
+                  <h2 className='text-2xl'> El Carrito está Vacio</h2>,
+                  <button className= "w-36 h-11 mt-12 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Cerrar Carrito </button>
                   </div> ):(
                   <div> 
                     <h2 className='text-xl font-bold'>TOTAL CARRITO : $ {totalCartPrice} </h2>,
