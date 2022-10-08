@@ -53,7 +53,7 @@ const ShoppingCart = () => {
       dispatch ({type:TYPES.CLEAR_CART});
     } ;
     
-    var totalCartPrice = null; 
+    var totalCartPrice = 0; 
 
     return (
      
@@ -83,11 +83,18 @@ const ShoppingCart = () => {
               {cart.map((item,index) => <CartItem  key={index} data={item} delFromCart={delFromCart} clearCart={clearCart}/>)}
               {cart.map((item,index) => {totalCartPrice+= item.price * item.quantity;})}
               <div className='flex flex-col items-center justify-center mt-12'> 
-                  <h2 className='text-xl font-bold'>TOTAL CARRITO : $ {totalCartPrice} </h2>
-                  <div className='flex'> 
-                      <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-secondary hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Checkout</button>
-                      <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Limpiar carrito </button>
-                  </div>
+                  {totalCartPrice === 0 ? ( 
+                    <div> 
+                  <h2> El Carrito está Vacio</h2>,
+                  <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Cerrar Carrito </button>
+                  </div> ):(
+                  <div> 
+                    <h2 className='text-xl font-bold'>TOTAL CARRITO : $ {totalCartPrice} </h2>,
+                 <div className='flex'> 
+                    <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-secondary hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Checkout</button>
+                    <button className= "w-24 h-11 mt-12 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={() => {{clearCart()} {closeModal(false)}}}> Limpiar carrito </button>
+                    </div>
+                 </div> )}  
               </div>
             </div>
 
