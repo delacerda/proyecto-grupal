@@ -17,12 +17,12 @@ const CartItem = ({data, delFromCart, clearCart}) => {
                         <img src={image} alt={name} className="w-60"/>
                     </div>
                     <div>
-                        <h2 className="text-xl font-bold">{name}</h2>
+                        <h2 className="text-xl font-semibold">{name}</h2>
                         <h3 className="text-sm">Cantidad : {quantity} </h3>
-                        <h3 className="text-sm">Precio por un. ${price}</h3> 
+                        <h3 className="text-sm">Precio unit. ${price}</h3> 
                     </div>
                     <div class="flex flex-col p-4 mt-4">
-                        <h2 className="text-xl font-bold">Total <span className="flex"> ${price*quantity} </span></h2>
+                        <h2 className="text-xl font-bold">Subtotal <span className="flex"> ${price*quantity} </span></h2>
                     </div>
                     <div className="flex flex-col"> 
                     <button className= "w-24 h-11 m-2.5 text-xs border-none bg-primary hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-white" onClick={()=> delFromCart(id)}> Eliminar Uno </button>

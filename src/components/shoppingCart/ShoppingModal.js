@@ -13,7 +13,7 @@ const ShoppingModal = ({data, addToCart, closeModal}) => {
               
               <div className={styles.modalBody} >
                   <img src={image} alt={name}/* className={styles.modalImage} */ className=' h-44 w-27'  /> 
-                  <h4>{price}</h4>
+                  <h4>${price}</h4>
                   <p>Esta por agregar al carrito la figurita de {name}, desea continuar? </p> 
               </div>
               <div className={styles.modalFooter}>

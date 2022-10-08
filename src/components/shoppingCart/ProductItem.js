@@ -88,7 +88,7 @@ const ProductItem = ({data, addToCart}) => {
             </div>
             <div className="flex items-center justify-around">
               <span className="mr-1 text-xl font-bold text-gray-900">
-                {price }
+                ${price}
               </span>
               <button   className="ml-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1.5 text-center" 
                 onClick={() => {setOpenModal(true)}}> 
